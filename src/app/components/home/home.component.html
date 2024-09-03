@@ -1,0 +1,43 @@
+<section id="home" class="seccion home">
+  <app-particles></app-particles>
+
+  <div class="contenedor-seccion">
+    <div class="box-home">
+      <div class="datos">
+        <div class="box-nombre">
+          <p class="text-light"><span class="nombre" #name id="nombre">Francisco Muñoz</span></p>
+        </div>
+        <div class="descripcion">
+          <p class="descripcion-desarrollador">Desarrollador</p>
+          <p><span class="opciones"> {{ textoActual }} </span></p>
+        </div>
+      </div>
+
+      <div class="home-menu">
+        <p class="item-menu im1" (click)="navigateTo('proyectos')">proyectos</p>
+
+        <p class="item-menu im2" (click)="navigateTo('sobre-mi')">sobre mí</p>
+
+        <p class="item-menu im3" (click)="navigateTo('experiencia')">experiencia</p>
+      </div>
+    </div>
+
+  <div class="banner">
+      <div class="elemento-banner github" (click)="openGitHub()">
+        <img src="icons/github.png" alt="" class="icon">
+        <p class="nombre-elemento desaparecer">GitHub</p>
+      </div>
+      <div class="elemento-banner email">
+        <p class="email-elemento">fcomunozm&commat;gmail.com</p>
+      </div>
+      <div class="elemento-banner linkedin" (click)="openLinkedin()">
+        <img src="icons/linkedin.png" alt="" class="icon">
+        <p class="nombre-elemento desaparecer">LinkedIn</p>
+      </div>
+      <div class="elemento-banner cv" (click)="downloadPDF()">
+        <img src="icons/cv.png" alt="" class="icon">
+        <p class="nombre-elemento desaparecer">Descargar CV</p>
+      </div>
+    </div>
+  </div>
+</section>

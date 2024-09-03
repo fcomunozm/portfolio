@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sección experiencia */
+.experiencia {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #cbdaf2;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+/* Contenedor principal */
+.contenedor-experiencia {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Cabecera */
+.cabecera {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Span para líneas decorativas */
+.span-izquierda, .span-derecha {
+  flex-grow: 1;
+  height: 2px;
+}
+
+.span-izquierda {
+  background: linear-gradient(to left, transparent, #cbdaf2, transparent);
+}
+
+.span-derecha {
+  background: linear-gradient(to right, transparent, #cbdaf2, transparent);
+}
+
+/* Título de la sección */
+.seccion-nombre {
+  font-size: 2.2rem;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+/* Contenido principal */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Empresa */
+.empresa {
+  width: 100%;
+}
+
+/* Nombre de la empresa */
+.nombre h5 {
+  color: #abcaf6;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Fechas de trabajo */
+.fecha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 200;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.fecha p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Descripción */
+.descripcion {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+/* Información sobre prácticas */
+.info-practicas ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.info-practicas li {
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+/*  lineas  */
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+
+}
+
+.particles span {
+  position: absolute;
+  display: block;
+  width: 3000px;
+  height: 20px;
+  background: #d9ffe4;
+  background: linear-gradient(to right, transparent, transparent, #101426, transparent,transparent);
+  animation: float 20s linear infinite;
+  opacity: 0.8;
+}
+
+.particles span:nth-child(1) {
+  top: 7%;
+  left: 2%;
+  width: 3000px;
+  height: 2px;
+  animation-duration: 12s;
+  background: linear-gradient(to right, transparent, transparent, #101426, transparent,transparent);
+  animation: one 60s linear infinite;
+}
+
+.particles span:nth-child(2) {
+  top: 14%;
+  right: 5%;
+  width: 3000px;
+  height: 2px;
+  animation-duration: 14s;
+  background: linear-gradient(to right, transparent, transparent, #eff7fe, transparent,transparent);
+  animation: two 40s linear infinite;
+}
+
+.particles span:nth-child(3) {
+  top: 29%;
+  left: 3%;
+  width: 4000px;
+  height: 2px;
+  animation-duration: 16s;
+  animation-delay: -3s;
+  background: linear-gradient(to right, transparent, transparent, #e2effd, transparent,transparent);
+  animation: one 90s linear infinite;
+}
+
+
+.particles span:nth-child(4) {
+  top: 31%;
+  right: 2%;
+  width: 3000px;
+  height: 2px;
+  animation-duration: 15s;
+  animation-delay: -5s;
+  background: linear-gradient(to right, transparent, transparent, #34437b, transparent,transparent);
+  animation: two 10s linear infinite;
+}
+
+.particles span:nth-child(5) {
+  top: 45%;
+  left: 4%;
+  width: 900px;
+  height: 2px;
+  animation-duration: 13s;
+  animation-delay: -4s;
+  background: linear-gradient(to right, transparent, transparent, #4258c0, transparent,transparent);
+  animation: one 20s linear infinite;
+}
+
+.particles span:nth-child(6) {
+  top: 57%;
+  left: 2%;
+  width: 1200px;
+  height: 2px;
+  animation-duration: 17s;
+  animation-delay: -6s;
+  background: linear-gradient(to right, transparent, transparent, #101426, transparent,transparent);
+  animation: two 10s linear infinite;
+}
+
+.particles span:nth-child(7) {
+  top: 61%;
+  right: 4%;
+  width: 8000px;
+  height: 2px;
+  animation-duration: 18s;
+  animation-delay: -7s;
+  background: linear-gradient(to right, transparent, transparent, #012fff, transparent,transparent);
+  animation: one 90s linear infinite;
+}
+
+.particles span:nth-child(8) {
+  top: 73%;
+  left: 3%;
+  width: 600px;
+  height: 2px;
+  animation-duration: 14s;
+  animation-delay: -8s;
+  background: linear-gradient(to right, transparent, transparent, #101426, transparent,transparent);
+  animation: two 10s linear infinite;
+}
+
+.particles span:nth-child(9) {
+  bottom: 81%;
+  right: 2%;
+  width: 700px;
+  height: 2px;
+  animation-duration: 15s;
+  animation-delay: -9s;
+  background: linear-gradient(to right, transparent, transparent, #101426, transparent,transparent);
+  animation: one 90s linear infinite;
+}
+
+
+
+.particles span:nth-child(10) {
+  bottom: 95%;
+  left: 5%;
+  width: 90px;
+  height: 2px;
+  animation-duration: 16s;
+  animation-delay: -10s;
+  background: linear-gradient(to right, transparent, transparent, #89acf0, transparent,transparent);
+  animation: two 10s linear infinite;
+}
+
+@keyframes one {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes two {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 320px) {
+  .seccion-nombre {
+    font-size: 1.5rem;
+  }
+
+  .titulo	{
+    font-size: .8rem;
+  }
+
+  .contenedor-sobre-mi{
+    width: 100%;
+  }
+
+  .main{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contenedor-texto{
+    font-size: .7rem;
+  }
+
+}
+
+@media (max-width: 426px) {
+  .cabecera{
+    width: 100%;
+  }
+
+  .seccion-nombre{
+    font-size: 1.3rem;
+  }
+
+  .fecha p{
+    font-size: 1rem;
+  }
+
+  .descripcion{
+    font-size: 1.1rem;
+  }
+
+}
+
+@media (max-width: 376px) {
+  .cabecera{
+    width: 100%;
+  }
+
+  .seccion-nombre{
+    font-size: 1.3rem;
+  }
+
+  .fecha p{
+    font-size: 1rem;
+  }
+
+  .descripcion{
+    font-size: 1rem;
+  }
+}
+

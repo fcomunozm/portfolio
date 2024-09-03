@@ -1,0 +1,101 @@
+<section id="proyectos" class="seccion" #proyectos>
+  <app-particles></app-particles>
+  <div class="contenedor-seccion">
+    <header class="cabecera">
+      <span class="span span-izquierda"></span>
+      <p class="seccion-nombre">Proyectos</p>
+      <span class="span span-derecha"></span>
+    </header>
+
+
+    <div class="main">
+      <div class="carousel-track-container">
+        <div class="carousel-track">
+          <div class="proyecto">
+            <div class="box-proyecto">
+              <div class="box-imagen">
+                <img src="/proyectos/web-paises.png" alt="" class="img">
+              </div>
+
+              <div class="info">
+                <div class="titulo">
+                  <p>Web de países</p>
+                </div>
+                <div class="tecnologias">
+                  <div class="tecnologia">
+                    <p class="nombre-tecnologia">Angular</p>
+                    <img src="favicon.ico" alt="" class="icon-tecnologia">
+                  </div>
+                  <div class="tecnologia">
+                    <p class="nombre-tecnologia">TypeScript</p>
+                    <img src="tecnologias/typescript.svg" alt="" class="icon-tecnologia">
+                  </div>
+                  <div class="tecnologia">
+                    <p class="nombre-tecnologia">HTML</p>
+                    <img src="tecnologias/html.svg" alt="" class="icon-tecnologia">
+                  </div>
+                  <div class="tecnologia">
+                    <p class="nombre-tecnologia">CSS</p>
+                    <img src="tecnologias/css3.svg" alt="" class="icon-tecnologia">
+                  </div>
+                </div>
+                <div class="descripcion">
+                  <p>Desarrollé una aplicación web que permite buscar información sobre países por nombre, capital o continente. Los datos se obtienen de una API externa.</p>
+                </div>
+                <div class="url">
+                  <p class="btn-repositorio" (click)="toRepositorioPaises()"> Repositorio </p>
+                  <p class="btn-web" (click)="toWebPaises()"> Web </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <div class="box-proyecto">
+              <div class="box-imagen">
+                <img src="/proyectos/bigbangcomics.png" alt="" class="img">
+              </div>
+
+              <div class="info">
+                <div class="titulo">
+                  <p>Big Bang Cómics</p>
+                </div>
+                <div class="tecnologias">
+                  <div class="tecnologia">
+                    <p class="nombre-tecnologia">Angular</p>
+                    <img src="favicon.ico" alt="" class="icon-tecnologia">
+                  </div>
+                  <div class="tecnologia">
+                    <p class="nombre-tecnologia">TypeScript</p>
+                    <img src="tecnologias/typescript.svg" alt="" class="icon-tecnologia">
+                  </div>
+                  <div class="tecnologia">
+                    <p class="nombre-tecnologia">HTML</p>
+                    <img src="tecnologias/html.svg" alt="" class="icon-tecnologia">
+                  </div>
+                  <div class="tecnologia">
+                    <p class="nombre-tecnologia">CSS</p>
+                    <img src="tecnologias/css3.svg" alt="" class="icon-tecnologia">
+                  </div>
+                </div>
+                <div class="descripcion">
+                  <p>Desarrollé una aplicación de e-commerce especializada en la venta de cómics. La plataforma permite a los usuarios explorar, buscar y comprar cómics con facilidad, ofreciendo una experiencia de compra fluida e intuitiva.</p>
+                </div>
+                <div class="url">
+                  <p class="btn-repositorio" (click)="toRepositorioBBComics()"> Repositorio </p>
+                  <p class="btn-web" (click)="toWebBBComics()"> Web </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-button left" (click)="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-button right" (click)="moveCarousel(1)">&#10095;</button>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>

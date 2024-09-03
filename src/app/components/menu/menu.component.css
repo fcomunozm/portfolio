@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sec-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  border-radius: 20px;
+  opacity: 0;
+  margin-top: 100px;
+}
+
+.container-menu {
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  margin: 0 auto;
+  background-color: hsla(230, 40%, 11%, 0.5);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  z-index: 1000;
+  opacity: 1;/* Asegúrate de que el menú esté por encima del contenido */
+}
+
+.box-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 0 auto;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  background-color: #cad9f299;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container-menu:hover{
+  background-color: #e1eaf8;
+}
+
+.menu-item{
+  font-size: 1.1em;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.box-item:hover{
+  background-color: #3f58b6;
+  color: white;
+}
+
+.container-menu:hover > .box-item {
+  border: 1px solid #3f58b6;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Estilos para pantallas ultra grandes */
+@media only screen and (min-width: 1920px) {
+
+  .container-menu {
+    width: 30%;
+    background-color: #cbdaf2;
+    border-radius: 20px;
+  }
+
+
+  .menu-item{
+    font-size: 1.7em;
+  }
+
+  .box-item:hover{
+    background-color: #e1eaf8;
+
+  }
+
+  .box-item:hover .menu-item{
+    color: #101426;
+    letter-spacing: 1px;
+  }
+
+}
+
+/* Estilos específicos para pantallas medianas */
+@media only screen and (max-width: 1199px) and (min-width: 1025px) {
+  .container-menu {
+    width: 30%;
+    background-color: #cbdaf2;
+    border-radius: 20px;
+    margin: 20px 0;
+  }
+
+
+  .menu-item{
+    font-size: 1.7em;
+  }
+
+  .box-item:hover{
+    background-color: #e1eaf8;
+
+  }
+
+  .box-item:hover .menu-item{
+    color: #101426;
+    letter-spacing: 1px;
+  }
+}
+
+/* Estilos específicos para tabletas en modo retrato */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+  .container-menu {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+    margin: 0 auto;
+    background-color: hsla(230, 40%, 11%, 0.5);;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+
+
+  .menu-item{
+    font-size: 1rem;
+  }
+
+  .box-item:hover{
+    background-color: #e1eaf8;
+
+  }
+
+  .box-item:hover .menu-item{
+    color: #101426;
+    letter-spacing: 1px;
+  }
+}
+
+/* Estilos específicos para dispositivos medianos */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .sec-menu {
+    margin-top: 0;
+  }
+
+  .container-menu {
+    width: 100%;
+    border-radius: 0;
+    background-color: hsla(229, 41%, 11%, 0.3);
+  }
+
+
+  .menu-item{
+    font-size: 1rem;
+    padding: 0;
+    padding: 2px 4px;
+    border-radius: 5px;
+  }
+
+}
+
+/* Estilos específicos para teléfonos móviles */
+@media only screen and (max-width: 480px) and (min-width: 321px) {
+  .sec-menu {
+    margin-top: 0;
+  }
+
+  .container-menu {
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    background-color: hsla(229, 41%, 11%, 0.3);
+  }
+
+
+  .menu-item{
+    font-size: .8rem;
+    padding: 0;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+
+}
+
+/* Estilos específicos para teléfonos pequeños */
+@media only screen and (max-width: 320px) {
+  .sec-menu {
+    margin-top: 0;
+  }
+
+  .container-menu {
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    background-color: hsla(229, 41%, 11%, 0.3);
+  }
+
+
+  .menu-item{
+    font-size: .6rem;
+    padding: 0;
+    padding: 2px 4px;
+    border-radius: 5px;
+  }
+
+}

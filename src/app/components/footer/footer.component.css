@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 80%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.info{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 100;
+  font-size: 1.2rem;
+
+}
+
+.text-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  transition: all .3s ease;
+}
+
+.text-icon:hover > p{
+  display: block;
+}
+
+.text-icon:hover{
+  cursor: pointer;
+}
+
+.text-icon p{
+  font-size: 1.5rem;
+  color: #abcaf6;
+  font-style: italic;
+  transition: all .3s ease;
+  opacity: 0;
+}
+
+.text-icon:hover > p{
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+
+.github{
+  animation: liquid 10s infinite;
+  animation-delay: 2s;
+}
+
+.email{
+  transition: all .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.email p{
+  margin: 0;
+}
+
+.email:hover{
+  animation: none;
+  border-radius: 10px;
+  border: 3px solid #00ff73;
+  padding: 4px 15px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.email:hover > p{
+  color: #00ff73;
+  font-weight: 900;
+}
+
+.email p{
+  cursor:crosshair;
+  opacity: 1;
+}
+
+
+.linkedin{
+  animation: liquid 5s infinite;
+}
+
+.cv{
+  animation: liquid 10s infinite;
+  animation-delay: 4s;
+}
+
+.texto{
+  align-items: start;
+}
+
+.footer{
+  align-items: center;
+  background-color: hsla(230, 40%, 11%, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  justify-content: center;
+  margin-top: 60px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-top: 2px solid hsla(230, 40%, 11%);;
+}
+
+@media only screen and (max-width: 450px) {
+  .banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon{
+    padding: 4px;
+  }
+
+  .email p{
+    font-size: 1rem;
+  }
+
+  .texto{
+    display: none;
+  }
+
+  .info{
+    width: 100%;
+    font-size: .9rem;
+    padding: 0 5px;
+  }
+}

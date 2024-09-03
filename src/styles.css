@@ -1,1 +1,149 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  transition: all 1s;
+  background: linear-gradient(45deg, #101426, #34437b);
+  animation: animate-gradient 30s ease infinite;
+}
+
+
+/* Parte comunes */
+
+.seccion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #cbdaf2;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-seccion {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Cabecera */
+.cabecera {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Título de la sección */
+.seccion-nombre {
+  font-size: 2.2rem;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+/* Span para líneas decorativas */
+.span-izquierda, .span-derecha {
+  flex-grow: 1;
+  height: 2px;
+}
+
+.span-izquierda {
+  background: linear-gradient(to left, transparent, #cbdaf2, transparent);
+}
+
+.span-derecha {
+  background: linear-gradient(to right, transparent, #cbdaf2, transparent);
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contenedor-seccion {
+    width: 97%;
+  }
+}
+
+/* Animación del fondo */
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Efecto glitch */
+@keyframes glitch {
+  0%, 90% {
+    transform: none;
+  }
+  92% {
+    transform: skew(5deg);
+  }
+  94% {
+    transform: skew(-5deg);
+  }
+  96% {
+    transform: translate(5px);
+  }
+  98% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes glitchTop {
+  0%, 90% {
+    clip: rect(0, 900px, 0, 0);
+    transform: translate(0);
+  }
+  92% {
+    clip: rect(15px, 9999px, 85px, 0);
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    clip: rect(0, 900px, 0, 0);
+    transform: translate(0);
+  }
+}
+
+@keyframes glitchBottom {
+  0%, 90% {
+    clip: rect(0, 900px, 0, 0);
+    transform: translate(0);
+  }
+  92% {
+    clip: rect(85px, 9999px, 140px, 0);
+    transform: translate(5px, 5px);
+  }
+  100% {
+    clip: rect(0, 900px, 0, 0);
+    transform: translate(0);
+  }
+}

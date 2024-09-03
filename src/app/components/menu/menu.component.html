@@ -1,0 +1,13 @@
+<section [ngClass]="{'fixed': isSticky}" class="sec-menu">
+  <div class="container-menu">
+    <div class="box-item">
+      <p class="menu-item" (click)="navigateTo('proyectos')">proyectos</p>
+    </div>
+    <div class="box-item">
+      <p class="menu-item" (click)="navigateTo('sobre-mi')">sobre mí</p>
+    </div>
+    <div class="box-item">
+      <p class="menu-item" (click)="navigateTo('experiencia')">experiencia</p>
+    </div>
+  </div>
+</section>
